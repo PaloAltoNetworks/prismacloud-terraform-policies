@@ -1,0 +1,15 @@
+---
+metadata:
+  name: "Ensure AWS EC2 instance have all 'environment' tag."
+  guidelines: "Ensure AWS EC2 instance have all 'environment' tag."
+  category: "compute"
+  severity: "low"
+
+scope:
+  provider: "aws"
+
+definition:
+  cond_type: "attribute"
+  resource_types: "aws_instance"
+  attribute: "tags.environment"
+  operator: "not_exists"

@@ -1,0 +1,21 @@
+---
+metadata:
+  guidelines: "Ensure Azure resource group have a cost center"
+  name: "Ensure Azure resource group have a cost center"
+  severity: "high"
+  category: "general"
+scope:
+  provider: "azure"
+definition:
+  and:
+    - cond_type: "attribute"
+      resource_types:
+        - "azurerm_resource_group"
+      attribute: "tags.cost-center"
+      operator: "exists"
+    - cond_type: "attribute"
+      resource_types:
+        - "azurerm_resource_group"
+      attribute: "tags.cost-center"
+      operator: "contains"
+      value: "@"
