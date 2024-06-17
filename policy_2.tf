@@ -19,7 +19,7 @@ resource "prismacloud_policy" "check_ec2_env_tag_policy" {
       type           = "build"
       recommendation = "fix it"
       metadata = {
-        "code" : file("build_policies/aws_env_tag.yaml"),
+        "code" : file("build_policies/aws_ec2_with_environment_tag.yaml"),
       }
     }
   }

@@ -19,7 +19,7 @@ resource "prismacloud_policy" "cost_center_tag_policy" {
       type           = "build"
       recommendation = "fix it"
       metadata = {
-        "code" : file("build_policies/EnsureAzureRGwithCostCenter.yaml"),
+        "code" : file("build_policies/azure_rg_with_cost_center.yaml"),
       }
     }
   }
