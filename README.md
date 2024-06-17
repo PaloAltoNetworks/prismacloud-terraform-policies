@@ -19,7 +19,7 @@ PRISMACLOUD_CUSTOMER_NAME=
 ```
 
 # Configuration
-Update Terraform Variables: Modify terraform.tfvars with your relevant configuration:
+Update Terraform Variables: Modify `terraform.tfvars` with your relevant configuration:
 
 ```
 emailRecipients = ["YOUR_EMAIL"]
