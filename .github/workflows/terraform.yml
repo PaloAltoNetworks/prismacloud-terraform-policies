@@ -27,7 +27,7 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
